@@ -4,10 +4,14 @@ MAINTAINER www.lu8.win<372763861@qq.com>
 
 ADD supernode /supernode
 ADD supernode2 /supernode2
+ADD run.sh /run.sh
 
-RUN chmod –R 777 /supernode &&
-    chmod –R 777 /supernode2 &&
-    /supernode -l 10082 &&
-    /supernode2 -l 10086
+RUN chmod 777 /supernode &&
+    chmod 777 /supernode2 &&
+    chmod 777 /run.sh
 
-CMD ["/supernode", "-l", "10082", "-f"] && ["/supernode2", "-l", "10086", "-f"]
+
+EXPOSE 10082
+EXPOSE 10086
+
+CMD /run.sh
