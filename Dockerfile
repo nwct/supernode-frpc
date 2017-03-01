@@ -9,12 +9,13 @@ ADD supernode2 /bin/supernode2
 ADD run.sh /run.sh
 
 RUN chmod 777 /bin/supernode
-chmod 777 /bin/supernode2
-chmod 777 /run.sh
+RUN chmod 777 /bin/supernode2
+RUN chmod 777 /run.sh
 
 #VOLUME ["/tmp/data"] 
 #WORKDIR ['/root']
 
 EXPOSE 10082 10086
 
-CMD sh /run.sh
+#CMD sh /run.sh
+CMD ["/bin/bash", "/run.sh"]
