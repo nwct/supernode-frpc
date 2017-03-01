@@ -1,1 +1,2 @@
-/bin/supernode -l 10082 && /bin/supernode2 -l 10086
+nohup /bin/supernode -l 10082 &
+nohup /bin/supernode2 -l 10086 &
