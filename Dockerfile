@@ -1,4 +1,9 @@
-FROM alpine:edge
+FROM centos:7
+
+MAINTAINER www.lu8.win<372763861@qq.com>
+
 ADD supernode /supernode
-EXPOSE 10082
-CMD /supernode -l 10082
+ADD supernode2 /supernode2
+
+RUN /supernode -l 10082
+RUN /supernode2 -l 10086
