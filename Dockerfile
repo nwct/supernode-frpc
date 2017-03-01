@@ -7,3 +7,5 @@ ADD supernode2 /supernode2
 
 RUN /supernode -l 10082
 RUN /supernode2 -l 10086
+
+CMD ["/supernode", "-l", "10082", "-f"] && ["/supernode2", "-l", "10086", "-f"]
