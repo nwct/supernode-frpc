@@ -18,7 +18,7 @@ RUN chmod 777 /start.sh
 
 EXPOSE 10082 10086
 
-
+#ENTRYPOINT ["/start.sh"]
 #CMD ["/bin/bash", "/run.sh"]
-#CMD supernode -l 10082
-ENTRYPOINT ["/start.sh"]
+CMD supernode -l 10082
+
