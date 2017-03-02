@@ -1,5 +1,4 @@
-#FROM centos:7
-FROM centos-ssh
+FROM centos:7
 
 MAINTAINER www.lu8.win<372763861@qq.com>
 
@@ -18,7 +17,7 @@ RUN chmod 777 /start.sh
 
 EXPOSE 10082 10086
 
-#ENTRYPOINT ["/start.sh"]
+ENTRYPOINT ["/start.sh"]
 #CMD ["/bin/bash", "/run.sh"]
-CMD supernode -l 10082
+#CMD supernode -l 10082
 
