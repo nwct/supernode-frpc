@@ -1,5 +1,5 @@
-FROM centos:7
-
+#FROM centos:7
+FROM alpine:latest
 MAINTAINER www.lu8.win<372763861@qq.com>
 
 
