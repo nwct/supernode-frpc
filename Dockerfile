@@ -1,6 +1,6 @@
-#FROM centos:7
-FROM alpine:latest
-MAINTAINER www.lu8.win<372763861@qq.com>
+FROM centos:7
+
+MAINTAINER Chen Gang<372763861@qq.com>
 
 
 
