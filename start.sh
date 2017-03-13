@@ -16,7 +16,7 @@ log_file = frpc.log
 log_level = info
 log_max_days = 3
 
-[udp_$suiji]
+[udp_$(suiji)_10082]
 privilege_mode = true
 type = udp
 local_ip = 127.0.0.1
@@ -25,7 +25,7 @@ use_gzip = true
 use_encryption = true
 remote_port = 10082
 
-[udp_$suiji]
+[udp_$(suiji)_10086]
 privilege_mode = true
 type = udp
 local_ip = 127.0.0.1
@@ -35,3 +35,5 @@ use_encryption = true
 remote_port = 10086
 
 EOF
+
+nohup /bin/frpc -c /frpc.ini
