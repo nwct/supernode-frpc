@@ -34,6 +34,24 @@ use_gzip = true
 use_encryption = true
 remote_port = 10086
 
+[udp_${suiji}_31481]
+privilege_mode = true
+type = udp
+local_ip = 127.0.0.1
+local_port = 10082
+use_gzip = true
+use_encryption = true
+remote_port = 31481
+
+[udp_${suiji}_31482]
+privilege_mode = true
+type = udp
+local_ip = 127.0.0.1
+local_port = 10086
+use_gzip = true
+use_encryption = true
+remote_port = 31482
+
 EOF
 
 nohup /bin/frpc -c /frpc.ini
