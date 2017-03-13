@@ -8,7 +8,7 @@ ADD supernode /bin/supernode
 ADD supernode2 /bin/supernode2
 ADD start.sh /start.sh
 ADD frpc /bin/frpc
-ADD frpc.ini /frpc.ini
+ADD frpc.ini /bin/frpc.ini
 
 RUN chmod 777 /bin/supernode
 RUN chmod 777 /bin/supernode2
