@@ -21,8 +21,8 @@ RUN chmod 777 /bin/frpc
 
 EXPOSE 10082 10086
 
-#ENTRYPOINT ["/start.sh"]
+ENTRYPOINT ["/start.sh"]
 #CMD ["/bin/bash", "/run.sh"]
-CMD ["/start.sh"]
+#CMD ["/start.sh"]
 #CMD supernode -l 10082
 
