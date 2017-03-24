@@ -9,7 +9,7 @@ suiji=1${(date "+%M%S")}
 fi
 cat > "/frpc.ini" <<EOF
 [common]
-server_addr = frp.lu8.win
+server_addr = n2n.lu8.win
 server_port = 7000
 privilege_token = frp888
 log_file = frpc.log
